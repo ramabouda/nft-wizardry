@@ -11,7 +11,7 @@ import {
   SIGNATURE_REQUEST,
 } from "../../src/sismo-connect-config.ts";
 
-const sessionOptions: IronSessionOptions = {
+export const sessionOptions: IronSessionOptions = {
   password:
     "TEST_PWD___TEST_PWD___TEST_PWD___TEST_PWD___TEST_PWD___TEST_PWD___",
   cookieName: "nft-wizardry",
@@ -36,26 +36,11 @@ export type User = {
 
 const sismoConnect = SismoConnect({ config: CONFIG });
 
-const evmAccountsFreeMintDone: any = [];
-
-async function ironSessionLogin(req: NextApiRequest, res: NextApiResponse) {}
-
-function hadFreeMint(address: string) {
-  const freeMintDone = evmAccountsFreeMintDone.find(
-    (vaultId: any) => vaultId === address
-  );
-  if (freeMintDone) {
-    throw new Error("You already had free NFTs, you bad boy!");
-  }
-
-  // TODO: Mint 3 nfts, send to user, save wallet address to avoid sybil attack
-  // evmAccountsFreeMintDone.push(addressId);
-}
-
 // this is the API route that is called by the SismoConnectButton
 async function loginRoute(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
-    res.status(200).json({ error: "POST only" });
+    res.status(400).json({ error: "POST only" });
+    return;
   }
 
   console.log("req.body", typeof req.body);
@@ -82,7 +67,6 @@ async function loginRoute(req: NextApiRequest, res: NextApiResponse) {
     // Start Iron session.
     const user = {
       isLoggedIn: true,
-      vaultId: "12",
       address: addressId,
     } as User;
     req.session.user = user;
