@@ -1,20 +1,20 @@
 "use client";
 
-import { useState } from "react";
-import Header from "./components/Header";
 import {
   SismoConnectButton,
   SismoConnectResponse,
   SismoConnectVerifiedResult,
 } from "@sismo-core/sismo-connect-react";
+import { useState } from "react";
+import Header from "../components/Header";
 import {
-  CONFIG,
   AUTHS,
-  CLAIMS,
-  SIGNATURE_REQUEST,
   AuthType,
+  CLAIMS,
+  CONFIG,
   ClaimType,
-} from "./sismo-connect-config";
+  SIGNATURE_REQUEST,
+} from "../sismo-connect-config";
 
 export default function Home() {
   const [sismoConnectVerifiedResult, setSismoConnectVerifiedResult] =

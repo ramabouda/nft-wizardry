@@ -1,13 +1,15 @@
 import {
-  ClaimType,
-  AuthType,
-  SignatureRequest,
   AuthRequest,
+  AuthType,
   ClaimRequest,
+  ClaimType,
+  SignatureRequest,
   SismoConnectConfig,
 } from "@sismo-core/sismo-connect-client";
 
-export { ClaimType, AuthType };
+export const OUR_WALLET_ADDRESS = "0x41e3FAeCd70EC0Eb25e98fca03AbCE66ab69B876";
+
+export { AuthType, ClaimType };
 export const CONFIG: SismoConnectConfig = {
   appId: "0x16c227c70ad234885286d023fbd2b8e1",
   vault: {
@@ -20,7 +22,7 @@ export const CONFIG: SismoConnectConfig = {
       // "0x1b9424ed517f7700e7368e34a9743295a225d889",
       // "0x82fbed074f62386ed43bb816f748e8817bf46ff7",
       // "0xc281bd4db5bf94f02a8525dca954db3895685700",
-         "0x6201df57Cb9f15B1232cF333a78926A303f6Bbac",
+      OUR_WALLET_ADDRESS,
       // Github Data Source
       // "github:dhadrien",
       // Twitter Data Source
@@ -38,7 +40,7 @@ export const AUTHS: AuthRequest[] = [
   // Anonymous identifier of the vault for this app
   // vaultId = hash(vaultSecret, appId).
   // full docs: https://docs.sismo.io/sismo-docs/build-with-sismo-connect/technical-documentation/vault-and-proof-identifiers
-   { authType: AuthType.VAULT },
+  { authType: AuthType.VAULT },
   // { authType: AuthType.EVM_ACCOUNT },
   // { authType: AuthType.GITHUB, isOptional: true },
   { authType: AuthType.TWITTER },
