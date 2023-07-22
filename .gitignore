@@ -73,3 +73,5 @@ crashlytics-build.properties
 
 # Custom
 .DS_Store
+node_modules
+.next
