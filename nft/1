@@ -1,0 +1,8 @@
+{
+  "name": "1st NFT - Blacksmith",
+  "description": "This is your 1st nft",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmbTEj2F3KCWoKVd3dXfDk24571xyPNhcrbpdD9K4yAf72/blacksmith.jpg",
+  "attack": 123,
+  "collectable": true,
+  "class": "EnumValue1"
+}
