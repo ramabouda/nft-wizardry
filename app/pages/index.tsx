@@ -6,7 +6,7 @@ import {
   SismoConnectVerifiedResult,
 } from "@sismo-core/sismo-connect-react";
 import { useState } from "react";
-import Header from "../components/Header";
+import Header from "../src/components/Header";
 import {
   AUTHS,
   AuthType,
@@ -14,14 +14,22 @@ import {
   CONFIG,
   ClaimType,
   SIGNATURE_REQUEST,
-} from "../sismo-connect-config";
+} from "../src/sismo-connect-config";
+import { User } from "./api/login";
 
 export default function Home() {
-  const [sismoConnectVerifiedResult, setSismoConnectVerifiedResult] =
-    useState<SismoConnectVerifiedResult>();
-  const [sismoConnectResponse, setSismoConnectResponse] = useState<SismoConnectResponse>();
+  const [sismoConnectVerifiedResult, setSismoConnectVerifiedResult] = useState<{
+    user: User;
+    sismoVerifiedResult: SismoConnectVerifiedResult;
+  }>();
+  const [sismoConnectResponse, setSismoConnectResponse] =
+    useState<SismoConnectResponse>();
   const [pageState, setPageState] = useState<string>("init");
   const [error, setError] = useState<string>("");
+
+  const startPlaying = async () => {
+    window.location.href = "/play";
+  };
 
   return (
     <>
@@ -40,12 +48,12 @@ export default function Home() {
               claims={CLAIMS}
               // Signature = user can sign a message embedded in their zk proof
               signature={SIGNATURE_REQUEST}
-              text="Prove With Sismo"
+              text="Login With Sismo"
               // Triggered when received Sismo Connect response from user data vault
               onResponse={async (response: SismoConnectResponse) => {
                 setSismoConnectResponse(response);
                 setPageState("verifying");
-                const verifiedResult = await fetch("/api/verify", {
+                const verifiedResult = await fetch("/api/login", {
                   method: "POST",
                   body: JSON.stringify(response),
                 });
@@ -62,28 +70,45 @@ export default function Home() {
           </>
         ) : (
           <>
+             <div className="status-wrapper">
+              {pageState == "verifying" ? (
+                <span className="verifying"> Verifying ZK Proofs... </span>
+              ) : (
+                <>
+                  {Boolean(error) ? (
+                    <span className="error">
+                      {" "}
+                      Error verifying ZK Proofs: {error}{" "}
+                    </span>
+                  ) : (
+                    <div>
+                      <div>
+                        <span className="verified">
+                          {" "}
+                          Authenticated with Sismo as{" "}
+                          {sismoConnectVerifiedResult?.user.address}!
+                        </span>
+                      </div>
+                      <br></br>
+                      <button className="play" onClick={startPlaying}>
+                        {" "}
+                        PLAY{" "}
+                      </button>
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+            <br></br>
             <button
               onClick={() => {
                 window.location.href = "/";
               }}
             >
               {" "}
-              RESET{" "}
+              DISCONNECT{" "}
             </button>
-            <br></br>
-            <div className="status-wrapper">
-              {pageState == "verifying" ? (
-                <span className="verifying"> Verifying ZK Proofs... </span>
-              ) : (
-                <>
-                  {Boolean(error) ? (
-                    <span className="error"> Error verifying ZK Proofs: {error} </span>
-                  ) : (
-                    <span className="verified"> ZK Proofs verified!</span>
-                  )}
-                </>
-              )}
-            </div>
+
           </>
         )}
 
@@ -101,12 +126,14 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {sismoConnectVerifiedResult.auths.map((auth, index) => (
-                  <tr key={index}>
-                    <td>{AuthType[auth.authType]}</td>
-                    <td>{auth.userId}</td>
-                  </tr>
-                ))}
+                {sismoConnectVerifiedResult.sismoVerifiedResult.auths.map(
+                  (auth, index) => (
+                    <tr key={index}>
+                      <td>{AuthType[auth.authType]}</td>
+                      <td>{auth.userId}</td>
+                    </tr>
+                  )
+                )}
               </tbody>
             </table>
           </>
@@ -127,20 +154,25 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {sismoConnectVerifiedResult.claims.map((claim, index) => (
-                  <tr key={index}>
-                    <td>
-                      <a
-                        target="_blank"
-                        href={"https://factory.sismo.io/groups-explorer?search=" + claim.groupId}
-                      >
-                        {claim.groupId}
-                      </a>
-                    </td>
-                    <td>{ClaimType[claim.claimType!]}</td>
-                    <td>{claim.value}</td>
-                  </tr>
-                ))}
+                {sismoConnectVerifiedResult.sismoVerifiedResult.claims.map(
+                  (claim, index) => (
+                    <tr key={index}>
+                      <td>
+                        <a
+                          target="_blank"
+                          href={
+                            "https://factory.sismo.io/groups-explorer?search=" +
+                            claim.groupId
+                          }
+                        >
+                          {claim.groupId}
+                        </a>
+                      </td>
+                      <td>{ClaimType[claim.claimType!]}</td>
+                      <td>{claim.value}</td>
+                    </tr>
+                  )
+                )}
               </tbody>
             </table>
           </>
@@ -164,7 +196,11 @@ export default function Home() {
                 <td>{readibleHex(auth.userId || "No userId requested")}</td>
                 <td>{auth.isOptional ? "optional" : "required"}</td>
                 {sismoConnectResponse ? (
-                  <td>{readibleHex(getProofDataForAuth(sismoConnectResponse, auth.authType)!)}</td>
+                  <td>
+                    {readibleHex(
+                      getProofDataForAuth(sismoConnectResponse, auth.authType)!
+                    )}
+                  </td>
                 ) : (
                   <td> ZK proof not generated yet </td>
                 )}
@@ -193,7 +229,10 @@ export default function Home() {
                 <td>
                   <a
                     target="_blank"
-                    href={"https://factory.sismo.io/groups-explorer?search=" + claim.groupId}
+                    href={
+                      "https://factory.sismo.io/groups-explorer?search=" +
+                      claim.groupId
+                    }
                   >
                     {claim.groupId}
                   </a>
@@ -237,7 +276,7 @@ export default function Home() {
               <td>{SIGNATURE_REQUEST.isSelectableByUser ? "yes" : "no"}</td>
               <td>
                 {sismoConnectVerifiedResult
-                  ? sismoConnectVerifiedResult.signedMessage
+                  ? sismoConnectVerifiedResult.sismoVerifiedResult.signedMessage
                   : "ZK proof not verified yet"}
               </td>
             </tr>
@@ -248,11 +287,20 @@ export default function Home() {
   );
 }
 
-function readibleHex(userId: string, startLength = 6, endLength = 4, separator = "...") {
+function readibleHex(
+  userId: string,
+  startLength = 6,
+  endLength = 4,
+  separator = "..."
+) {
   if (!userId.startsWith("0x")) {
     return userId; // Return the original string if it doesn't start with "0x"
   }
-  return userId.substring(0, startLength) + separator + userId.substring(userId.length - endLength);
+  return (
+    userId.substring(0, startLength) +
+    separator +
+    userId.substring(userId.length - endLength)
+  );
 }
 
 function getProofDataForAuth(
@@ -281,7 +329,11 @@ function getProofDataForClaim(
   for (const proof of sismoConnectResponse.proofs) {
     if (proof.claims) {
       for (const claim of proof.claims) {
-        if (claim.claimType === claimType && claim.groupId === groupId && claim.value === value) {
+        if (
+          claim.claimType === claimType &&
+          claim.groupId === groupId &&
+          claim.value === value
+        ) {
           return proof.proofData;
         }
       }

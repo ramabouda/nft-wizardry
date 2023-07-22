@@ -7,7 +7,7 @@
 
 .main {
   margin: 5vh auto;
-  padding: 2em; 
+  padding: 2em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,9 +15,8 @@
   max-width: 1200px; /* This will prevent the content from becoming too wide on large screens. */
   background-color: #282c34; /* change this to the color you prefer */
   border-radius: 8px; /* adds rounded corners */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* adds slight shadow for a "lifted" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* adds slight shadow for a "lifted" effect */
 }
-
 
 .error {
   border: 1px solid red;
@@ -29,7 +28,6 @@
   color: red;
   margin: 0 auto;
 }
-
 
 html,
 body {
@@ -93,6 +91,12 @@ button {
   color: #fff;
 }
 
+.play {
+  background: green;
+  display: block;
+  margin: auto;
+}
+
 label {
   margin-bottom: 10px;
   font-weight: 700;
@@ -132,7 +136,7 @@ input {
   font-size: 1rem;
   width: 100%;
   height: 3.3rem;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   background-color: transparent;
   backdrop-filter: blur(20px);
@@ -147,9 +151,9 @@ input:focus {
 
 .code-snippet {
   display: inline-block;
-  color: #333; 
+  color: #333;
   background-color: #f9f9f9;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   font-size: 1em;
   padding: 2px 6px;
   margin: 2px 0;
@@ -161,19 +165,23 @@ input:focus {
   padding: 1rem; /* Adds some space around the text */
   border: 2px solid #000000; /* Increases border thickness and change to black */
   border-radius: 5px; /* Rounds the corners of the border */
-  background-color: rgba(255,255,255,0.6); /* Adds a semi-transparent white background to increase readability of black text */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds a slight shadow for a "lifted" effect */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Adds a semi-transparent white background to increase readability of black text */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adds a slight shadow for a "lifted" effect */
 }
 
-
-.verifying, .verified {
+.verifying,
+.verified {
   display: inline-block;
   padding: 0.5em 1em; /* Padding around the text */
   border-radius: 5px; /* Slightly rounded corners for a softer look */
   font-size: 1.2em; /* Slightly larger text for emphasis */
   text-align: center; /* Center the text within the element */
   width: max-content; /* Add this line */
-
 }
 
 .verifying {
@@ -184,20 +192,26 @@ input:focus {
 }
 
 @keyframes fade {
-  0% {opacity: 1;}
-  50% {opacity: 0.6;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .verified {
   color: #ffffff; /* White text */
-  background-color: #4CAF50; /* Green background, you can replace it with any success color */
-  border: 2px solid #4CAF50; /* Border color same as background */
+  background-color: #4caf50; /* Green background, you can replace it with any success color */
+  border: 2px solid #4caf50; /* Border color same as background */
 }
 
 .status-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }

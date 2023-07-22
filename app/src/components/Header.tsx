@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function Header() {
   return (
@@ -6,24 +5,13 @@ export default function Header() {
       <h1>
         <b> Sismo Connect Starter: offchain app with Next.js</b>
       </h1>
-      <h3>
-        <a href="https://docs.sismo.io" target="_blank">
-          {" "}
-          Read the docs |{" "}
-        </a>
-        <a href="https://builders.sismo.io" target="_blank">
-          {" "}
-          Join the Telegram Builders Group{" "}
-        </a>
-      </h3>
       <p>
         1. The frontend requests ZK Proofs via Sismo Connect Button <br />
         2. The user generates ZK Proofs in their Data Vault and sends the Sismo Connect response to
         the frontend <br />
-        3. The frontend forwards the response to the backend via the verify API route <br />
-        4. The backend verifies the proofs contained in the response and sends the result back to
-        the frontend <br />
-        5. The frontend displays the Sismo Connect requests and verified result
+        3. The frontend forwards the response to the backend via the login API route <br />
+        4. The backend verifies the proofs contained in the response and starts a session<br />
+        5. The frontend displays the Sismo Connect requests and verified result with a link to go to the game
       </p>
       <div>
         <p>
