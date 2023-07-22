@@ -55,7 +55,7 @@ namespace MetaMask.Transports.Unity
             get
             {
                 #if UNITY_WEBGL
-                    return WebGLIsMobile();
+                    return false;
                 #else
                     return Application.isMobilePlatform;
                 #endif

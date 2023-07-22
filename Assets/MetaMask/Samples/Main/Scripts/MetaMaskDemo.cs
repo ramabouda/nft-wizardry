@@ -3,6 +3,7 @@ using System;
 using MetaMask.Models;
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace MetaMask.Unity.Samples
 {
@@ -75,7 +76,11 @@ namespace MetaMask.Unity.Samples
         /// <summary>Raised when the wallet is connected.</summary>
         private void walletConnected(object sender, EventArgs e)
         {
-            onWalletConnected?.Invoke(this, EventArgs.Empty);
+          //onWalletConnected?.Invoke(this, EventArgs.Empty);
+
+          Debug.Log("Hello: " + sender.ToString());
+
+          //SceneManager.LoadScene("CardBookScene");
         }
 
         /// <summary>Raised when the wallet is disconnected.</summary>

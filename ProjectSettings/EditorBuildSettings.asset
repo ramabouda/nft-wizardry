@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/TestScene.unity
+    guid: ae09ce3a7b1734010885ebe056a7c74f
+  - enabled: 1
+    path: Assets/MetaMask/Samples/Main/Scenes/MetaMask Main (Sample).unity
+    guid: ca0505b2cc25d9343a2ee46407aa8970
+  - enabled: 1
+    path: Assets/Scenes/CardBookScene.unity
+    guid: 3edcf97e4e2c64ad1b6192b83fbc9020
   m_configObjects: {}

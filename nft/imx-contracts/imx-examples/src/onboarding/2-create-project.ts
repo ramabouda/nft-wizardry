@@ -29,7 +29,7 @@ const component = '[IMX-CREATE-PROJECT]';
    * Edit your values here
    */
   const params: CreateProjectParams = {
-    name: 'NFT Wizardry x',
+    name: 'NFT Wizardry 4',
     company_name: 'NFT Wizardry Inc',
     contact_email: 'filakia.wisteria.ri@gmail.com',
   };

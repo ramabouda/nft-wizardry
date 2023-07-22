@@ -35,13 +35,16 @@ const component = '[IMX-CREATE-COLLECTION]';
    * Edit your values here
    */
   const params: CreateCollectionParams = {
-    name: 'NFT Wizardry 3',
-    description: 'NFT Wizardry Collection #3',
+    name: 'NFT Wizardry 4',
+    description: 'NFT Wizardry Collection #4',
     contract_address: collectionContractAddress,
     owner_public_key: ownerPublicKey,
-    icon_url: 'https://gateway.pinata.cloud/ipfs/QmbTEj2F3KCWoKVd3dXfDk24571xyPNhcrbpdD9K4yAf72/blacksmith.jpg',
-    metadata_api_url: 'https://gateway.pinata.cloud/ipfs/QmRjRL7RQvvxjXnWTiyQ6187sdxGRpYWW3itETjgYo1tfr',
-    collection_image_url: 'https://gateway.pinata.cloud/ipfs/QmbTEj2F3KCWoKVd3dXfDk24571xyPNhcrbpdD9K4yAf72/blacksmith.jpg',
+    icon_url:
+      'https://gateway.pinata.cloud/ipfs/QmbTEj2F3KCWoKVd3dXfDk24571xyPNhcrbpdD9K4yAf72/war_hawk.jpg',
+    metadata_api_url:
+      'https://gateway.pinata.cloud/ipfs/QmQDQAjqVFmsBEuHqGUhbw2dg7hJm7P1j6hgKhWdN1MRhd',
+    collection_image_url:
+      'https://gateway.pinata.cloud/ipfs/QmbTEj2F3KCWoKVd3dXfDk24571xyPNhcrbpdD9K4yAf72/nobles_sword.jpg',
     project_id: parseInt(projectId, 10),
   };
 
