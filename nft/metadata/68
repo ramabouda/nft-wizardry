@@ -1,0 +1,8 @@
+{
+  "name": "Samwindor the Valiant of Lothlorien",
+  "description": "A mysterious hero from the Mordor known as elf, a wise adventurer of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_4_2.png",
+  "attack": 9,
+  "collectable": true,
+  "class": "Paladin"
+}

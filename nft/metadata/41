@@ -1,0 +1,8 @@
+{
+  "name": "Elrandor the Cunning of Rohan",
+  "description": "A mysterious hero from the south known as king, a graceful seeker of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_5_3.png",
+  "attack": 4,
+  "collectable": false,
+  "class": "Mage"
+}

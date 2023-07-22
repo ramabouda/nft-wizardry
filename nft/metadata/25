@@ -1,0 +1,8 @@
+{
+  "name": "Glorothor the Noble of Isengard",
+  "description": "A fearless hero from the east known as wizard, a wise seeker of dwarf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_3.png",
+  "attack": 7,
+  "collectable": false,
+  "class": "Archer"
+}

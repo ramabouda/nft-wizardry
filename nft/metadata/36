@@ -1,0 +1,8 @@
+{
+  "name": "Eowiniel the Wise of Lothlorien",
+  "description": "A brave hero from the Gondor known as dwarf, a mysterious protector of dwarf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_11 copy.png",
+  "attack": 7,
+  "collectable": true,
+  "class": "Warrior"
+}

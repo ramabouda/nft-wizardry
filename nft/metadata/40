@@ -1,0 +1,8 @@
+{
+  "name": "Galador the Magnificent of the White Council",
+  "description": "A strong hero from the south known as king, a graceful seeker of human.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_1.png",
+  "attack": 4,
+  "collectable": true,
+  "class": "Rogue"
+}

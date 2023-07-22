@@ -1,0 +1,8 @@
+{
+  "name": "Gandiron the Mighty of Rivendell",
+  "description": "A kind hero from the Isengard known as king, a noble scholar of human.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_5_3.png",
+  "attack": 4,
+  "collectable": true,
+  "class": "Mage"
+}

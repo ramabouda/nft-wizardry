@@ -1,0 +1,8 @@
+{
+  "name": "Elrandor the Brave of Lothlorien",
+  "description": "A swift hero from the Isengard known as dwarf, a wise scholar of human.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_3.png",
+  "attack": 1,
+  "collectable": false,
+  "class": "Warrior"
+}

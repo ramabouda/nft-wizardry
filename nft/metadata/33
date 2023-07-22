@@ -1,0 +1,8 @@
+{
+  "name": "Treebor the Wise of Mirkwood",
+  "description": "A strong hero from the Mirkwood known as hobbit, a mysterious guardian of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_3.png",
+  "attack": 7,
+  "collectable": true,
+  "class": "Rogue"
+}

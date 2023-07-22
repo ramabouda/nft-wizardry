@@ -1,0 +1,8 @@
+{
+  "name": "Grimalion the Noble of Rohan",
+  "description": "A tall hero from the south known as dwarf, a graceful seeker of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_0.png",
+  "attack": 10,
+  "collectable": true,
+  "class": "Mage"
+}

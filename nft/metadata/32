@@ -1,0 +1,8 @@
+{
+  "name": "Thorondir the Valiant of Isengard",
+  "description": "A noble hero from the Mordor known as ranger, a wise guardian of elf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_1.png",
+  "attack": 6,
+  "collectable": true,
+  "class": "Archer"
+}

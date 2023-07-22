@@ -1,0 +1,8 @@
+{
+  "name": "Legofir the Valiant of Mirkwood",
+  "description": "A brave hero from the Gondor known as warrior, a cheerful seeker of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_0.png",
+  "attack": 7,
+  "collectable": true,
+  "class": "Rogue"
+}

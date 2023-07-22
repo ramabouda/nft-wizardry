@@ -1,0 +1,8 @@
+{
+  "name": "Samwindor the Mighty of the Fellowship",
+  "description": "A swift hero from the Rivendell known as warrior, a graceful guardian of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_5_3.png",
+  "attack": 2,
+  "collectable": false,
+  "class": "Mage"
+}

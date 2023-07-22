@@ -1,0 +1,8 @@
+{
+  "name": "Thorondir the Brave of the Nine Walkers",
+  "description": "A mighty hero from the south known as king, a gentle wanderer of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_11 copy.png",
+  "attack": 4,
+  "collectable": false,
+  "class": "Rogue"
+}

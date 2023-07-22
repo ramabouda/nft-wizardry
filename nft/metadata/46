@@ -1,0 +1,8 @@
+{
+  "name": "Eowiniel the Wise of the White Council",
+  "description": "A strong hero from the Mirkwood known as dwarf, a curious guardian of human.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_0.png",
+  "attack": 9,
+  "collectable": true,
+  "class": "Rogue"
+}

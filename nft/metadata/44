@@ -1,0 +1,8 @@
+{
+  "name": "Aragalad the Wise of Mirkwood",
+  "description": "A wise hero from the Isengard known as warrior, a mysterious seeker of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_4.png",
+  "attack": 2,
+  "collectable": true,
+  "class": "Archer"
+}

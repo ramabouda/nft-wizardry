@@ -1,0 +1,8 @@
+{
+  "name": "Boromis the Wise of the White Council",
+  "description": "A fearless hero from the Gondor known as dwarf, a mysterious scholar of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_4_2.png",
+  "attack": 6,
+  "collectable": true,
+  "class": "Rogue"
+}

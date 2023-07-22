@@ -1,0 +1,8 @@
+{
+  "name": "Eomendil the Mighty of the Nine Walkers",
+  "description": "A noble hero from the Isengard known as hobbit, a curious adventurer of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_0.png",
+  "attack": 10,
+  "collectable": true,
+  "class": "Warrior"
+}

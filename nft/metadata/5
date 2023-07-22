@@ -1,0 +1,8 @@
+{
+  "name": "Golluvar the Fearless of Rohan",
+  "description": "A brave hero from the west known as lord, a noble protector of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_5_3.png",
+  "attack": 4,
+  "collectable": false,
+  "class": "Mage"
+}

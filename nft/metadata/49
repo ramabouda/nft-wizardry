@@ -1,0 +1,8 @@
+{
+  "name": "Gandiron the Mighty of the Nine Walkers",
+  "description": "A brave hero from the Rivendell known as lord, a graceful seeker of human.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_4.png",
+  "attack": 1,
+  "collectable": false,
+  "class": "Warrior"
+}

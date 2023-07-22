@@ -1,0 +1,8 @@
+{
+  "name": "Eowiniel the Wise of the Nine Walkers",
+  "description": "A wise hero from the Gondor known as ranger, a gentle seeker of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_3.png",
+  "attack": 6,
+  "collectable": false,
+  "class": "Archer"
+}

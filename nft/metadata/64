@@ -1,0 +1,8 @@
+{
+  "name": "Golluvar the Cunning of the Fellowship",
+  "description": "A tall hero from the north known as warrior, a noble champion of human.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_4.png",
+  "attack": 5,
+  "collectable": false,
+  "class": "Warrior"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Gimlorin the Valiant of Gondor",
+  "description": "A brave hero from the Mordor known as king, a wise adventurer of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_4_2.png",
+  "attack": 9,
+  "collectable": true,
+  "class": "Mage"
+}

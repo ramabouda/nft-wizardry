@@ -1,0 +1,8 @@
+{
+  "name": "Aragalad the Valiant of Rivendell",
+  "description": "A brave hero from the Mirkwood known as lord, a cheerful protector of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_1_3.png",
+  "attack": 9,
+  "collectable": false,
+  "class": "Mage"
+}

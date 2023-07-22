@@ -1,8 +1,8 @@
 {
-  "name": "1st NFT - Blacksmith",
-  "description": "This is your 1st nft",
-  "image_url": "https://gateway.pinata.cloud/ipfs/QmbTEj2F3KCWoKVd3dXfDk24571xyPNhcrbpdD9K4yAf72/blacksmith.jpg",
-  "attack": 123,
-  "collectable": true,
-  "class": "EnumValue1"
+  "name": "Samwindor the Wise of Gondor",
+  "description": "A fearless hero from the west known as ranger, a cheerful seeker of dwarf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_5_3.png",
+  "attack": 5,
+  "collectable": false,
+  "class": "Archer"
 }

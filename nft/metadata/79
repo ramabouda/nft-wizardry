@@ -1,0 +1,8 @@
+{
+  "name": "Pippinger the Cunning of the Nine Walkers",
+  "description": "A mysterious hero from the Mirkwood known as king, a noble seeker of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_4.png",
+  "attack": 2,
+  "collectable": false,
+  "class": "Rogue"
+}

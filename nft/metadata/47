@@ -1,0 +1,8 @@
+{
+  "name": "Eomendil the Wise of Lothlorien",
+  "description": "A swift hero from the Mordor known as elf, a graceful scholar of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_25 copy.png",
+  "attack": 9,
+  "collectable": false,
+  "class": "Warrior"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Glorothor the Brave of Mirkwood",
+  "description": "A noble hero from the west known as warrior, a graceful seeker of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_11 copy.png",
+  "attack": 6,
+  "collectable": true,
+  "class": "Archer"
+}

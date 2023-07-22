@@ -1,0 +1,8 @@
+{
+  "name": "Eomendil the Bold of the White Council",
+  "description": "A mighty hero from the Mordor known as dwarf, a cheerful wanderer of human.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_11 copy.png",
+  "attack": 1,
+  "collectable": false,
+  "class": "Rogue"
+}

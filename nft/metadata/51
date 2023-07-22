@@ -1,0 +1,8 @@
+{
+  "name": "Boromis the Wise of the Shire",
+  "description": "A brave hero from the Gondor known as wizard, a curious protector of dwarf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_3.png",
+  "attack": 8,
+  "collectable": true,
+  "class": "Rogue"
+}

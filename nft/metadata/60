@@ -1,0 +1,8 @@
+{
+  "name": "Samwindor the Valiant of the Nine Walkers",
+  "description": "A swift hero from the Rivendell known as elf, a curious adventurer of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_0.png",
+  "attack": 1,
+  "collectable": true,
+  "class": "Rogue"
+}

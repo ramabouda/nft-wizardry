@@ -1,0 +1,8 @@
+{
+  "name": "Eowiniel the Wise of Rivendell",
+  "description": "A swift hero from the Shire known as lord, a loyal guardian of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_5_3.png",
+  "attack": 9,
+  "collectable": true,
+  "class": "Mage"
+}

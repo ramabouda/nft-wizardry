@@ -1,0 +1,8 @@
+{
+  "name": "Treebor the Magnificent of the Nine Walkers",
+  "description": "A brave hero from the south known as ranger, a curious scholar of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_0.png",
+  "attack": 3,
+  "collectable": true,
+  "class": "Mage"
+}

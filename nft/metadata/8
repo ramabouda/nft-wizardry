@@ -1,0 +1,8 @@
+{
+  "name": "Glorothor the Wise of Mirkwood",
+  "description": "A swift hero from the Mordor known as dwarf, a courageous guardian of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_25 copy.png",
+  "attack": 10,
+  "collectable": true,
+  "class": "Mage"
+}

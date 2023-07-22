@@ -1,0 +1,8 @@
+{
+  "name": "Gandiron the Mighty of Lothlorien",
+  "description": "A tall hero from the Mordor known as hobbit, a wise champion of elf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_4_2.png",
+  "attack": 1,
+  "collectable": true,
+  "class": "Warrior"
+}

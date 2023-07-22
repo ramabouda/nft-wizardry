@@ -1,0 +1,8 @@
+{
+  "name": "Eomendil the Noble of Mirkwood",
+  "description": "A fearless hero from the Rivendell known as wizard, a fearless wanderer of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_25 copy.png",
+  "attack": 2,
+  "collectable": false,
+  "class": "Mage"
+}

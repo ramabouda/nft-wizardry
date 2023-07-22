@@ -1,0 +1,8 @@
+{
+  "name": "Gimlorin the Fearless of Rohan",
+  "description": "A kind hero from the Isengard known as wizard, a wise scholar of elf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_1.png",
+  "attack": 4,
+  "collectable": false,
+  "class": "Paladin"
+}

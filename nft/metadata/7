@@ -1,0 +1,8 @@
+{
+  "name": "Bilbion the Bold of the Nine Walkers",
+  "description": "A fearless hero from the south known as king, a cheerful wanderer of human.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_1_3.png",
+  "attack": 3,
+  "collectable": false,
+  "class": "Paladin"
+}

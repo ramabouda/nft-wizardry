@@ -1,0 +1,8 @@
+{
+  "name": "Gandiron the Valiant of Rivendell",
+  "description": "A noble hero from the Isengard known as dwarf, a courageous protector of dwarf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_3.png",
+  "attack": 1,
+  "collectable": false,
+  "class": "Paladin"
+}

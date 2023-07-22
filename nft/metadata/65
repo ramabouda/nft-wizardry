@@ -1,0 +1,8 @@
+{
+  "name": "Treebor the Fearless of Lothlorien",
+  "description": "A mysterious hero from the Rivendell known as hobbit, a courageous wanderer of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_3.png",
+  "attack": 1,
+  "collectable": true,
+  "class": "Rogue"
+}

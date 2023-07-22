@@ -1,0 +1,8 @@
+{
+  "name": "Elrandor the Brave of Isengard",
+  "description": "A tall hero from the Mordor known as wizard, a wise protector of human.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_11 copy.png",
+  "attack": 8,
+  "collectable": false,
+  "class": "Paladin"
+}

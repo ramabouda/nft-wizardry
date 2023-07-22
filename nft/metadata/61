@@ -1,0 +1,8 @@
+{
+  "name": "Gimlorin the Wise of the Shire",
+  "description": "A strong hero from the Mordor known as elf, a curious adventurer of wizard.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_5_3.png",
+  "attack": 5,
+  "collectable": false,
+  "class": "Warrior"
+}

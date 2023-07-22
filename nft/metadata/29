@@ -1,0 +1,8 @@
+{
+  "name": "Grimalion the Fearless of Isengard",
+  "description": "A mighty hero from the Rivendell known as hobbit, a courageous scholar of dwarf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_4_2.png",
+  "attack": 2,
+  "collectable": true,
+  "class": "Paladin"
+}

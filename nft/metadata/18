@@ -1,0 +1,8 @@
+{
+  "name": "Eowiniel the Magnificent of Rivendell",
+  "description": "A strong hero from the Gondor known as hobbit, a wise guardian of elf.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_5_3.png",
+  "attack": 8,
+  "collectable": true,
+  "class": "Rogue"
+}

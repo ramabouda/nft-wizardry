@@ -1,0 +1,8 @@
+{
+  "name": "Treebor the Wise of the Fellowship",
+  "description": "A mysterious hero from the Isengard known as dwarf, a curious adventurer of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_1_3.png",
+  "attack": 7,
+  "collectable": false,
+  "class": "Paladin"
+}

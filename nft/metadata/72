@@ -1,0 +1,8 @@
+{
+  "name": "Thorondir the Valiant of Gondor",
+  "description": "A brave hero from the Mordor known as elf, a fearless wanderer of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_3.png",
+  "attack": 10,
+  "collectable": false,
+  "class": "Mage"
+}

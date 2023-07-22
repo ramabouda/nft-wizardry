@@ -1,0 +1,8 @@
+{
+  "name": "Aragalad the Noble of the Fellowship",
+  "description": "A noble hero from the Rivendell known as wizard, a courageous champion of hobbit.",
+  "image_url": "https://gateway.pinata.cloud/ipfs/QmVa2vmYwTKk398ck7HZXREUFXB35A2C1wVCAQqTF4z6tQ/tile_0_1.png",
+  "attack": 6,
+  "collectable": true,
+  "class": "Paladin"
+}
