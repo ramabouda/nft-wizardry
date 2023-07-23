@@ -1,15 +1,4 @@
-# Sismo Connect Starter: offchain app with Next.js
-
-Start developping an offchain application, with
-- a frontend making ZK proofs requests via Sismo Connect
-- a backend that verifies ZK Proofs received via Sismo Connect
-
-#### Support
-
-- [Documentation](https://docs.sismo.io)
-- [Telegram group](https://builders.sismo.io)
-
-## Usage
+# Getting started
 
 ### Prerequisites
 
