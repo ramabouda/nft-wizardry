@@ -1,5 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-
 import { AuthType, SismoConnect } from "@sismo-core/sismo-connect-server";
 import { IronSessionOptions } from "iron-session";
 import { withIronSessionApiRoute } from "iron-session/next";
@@ -10,16 +8,8 @@ import {
   CONFIG,
   SIGNATURE_REQUEST,
 } from "../../src/sismo-connect-config.ts";
-
-export const sessionOptions: IronSessionOptions = {
-  password:
-    "TEST_PWD___TEST_PWD___TEST_PWD___TEST_PWD___TEST_PWD___TEST_PWD___",
-  cookieName: "nft-wizardry",
-  // secure: true should be used in production (HTTPS) but can't be used in development (HTTP)
-  cookieOptions: {
-    secure: process.env.NODE_ENV === "production",
-  },
-};
+import { hadFreeMint as didFreeMint } from "./free-mint.ts";
+import { sessionOptions } from "./helpers/session.ts";
 
 // This is where we specify the typings of req.session.*
 declare module "iron-session" {
@@ -30,8 +20,9 @@ declare module "iron-session" {
 
 export type User = {
   isLoggedIn: boolean;
-  vaultId: string;
   address: string;
+  twitterId: string;
+  didFreeMint: boolean;
 };
 
 const sismoConnect = SismoConnect({ config: CONFIG });
@@ -61,14 +52,22 @@ async function loginRoute(req: NextApiRequest, res: NextApiResponse) {
     const evmAccountProof = sismoConnectResponse.proofs.find(
       (proof: any) => proof.auths[0].authType === AuthType.EVM_ACCOUNT
     );
-    const addressId = evmAccountProof.auths[0].userId;
-    console.log("user address:", addressId);
+    const userEvmAddress = evmAccountProof.auths[0].userId;
+    console.log("user address:", userEvmAddress);
+
+    const twitterAccountProof = sismoConnectResponse.proofs.find(
+      (proof: any) => proof.auths[0].authType === AuthType.TWITTER
+    );
+    const userTwitterId = twitterAccountProof.auths[0].userId;
+    console.log("user twitter:", userTwitterId);
 
     // Start Iron session.
     const user = {
       isLoggedIn: true,
-      address: addressId,
-    } as User;
+      address: userEvmAddress,
+      twitterId: userTwitterId,
+      didFreeMint: didFreeMint(userEvmAddress),
+    };
     req.session.user = user;
     await req.session.save();
     return res.status(200).json({ sismoVerifiedResult, user });
