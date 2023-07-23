@@ -3,7 +3,7 @@ export default function Header() {
   return (
     <>
       <h1>
-        <b> Sismo Connect Starter: offchain app with Next.js</b>
+        <b> NFT Wizardry - Sybil resistant NFT gifts</b>
       </h1>
       <p>
         1. The frontend requests ZK Proofs via Sismo Connect Button <br />
